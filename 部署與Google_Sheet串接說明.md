@@ -36,7 +36,11 @@
 3. 執行身分：建議選擇部署者／擁有者。
 4. 存取權：依團隊帳號與使用情境設定；若手機未登入指定 Google 帳號，會無法讀寫。
 5. 部署後複製 `/exec` 結尾的 Web App 網址。
-6. 開啟 HTML →「設定」→ 貼上網址 → 填寫顯示名稱 →「儲存並同步」。
+6. 本交付版本已預先設定以下 GAS Web App 網址，開啟 HTML 後可直接測試連線並填寫顯示名稱：
+
+   `https://script.google.com/macros/s/AKfycbzf2wSoS5P0c12Hgq8S8z-8h3tpr15ZLpNCDexUGHVaewCNGFA3CgOFHlzIKUGF2A1S/exec`
+
+   日後若重新部署 GAS，才需要到 HTML 的「設定」頁更新網址。
 
 Apps Script Content Service 會把回應重新導向至 `script.googleusercontent.com` 的一次性網址，因此 HTTP 用戶端必須允許重新導向；本 HTML 的 `fetch` 已設定 follow redirect。
 
